@@ -1,6 +1,6 @@
 
 import HomePage from '../pages/home.f7';
-import AboutPage from '../pages/about.f7';
+import DishPage from '../pages/dish.f7';
 import FormPage from '../pages/form.f7';
 import CatalogPage from '../pages/catalog.f7';
 import ProductPage from '../pages/product.f7';
@@ -16,8 +16,8 @@ var routes = [
     component: HomePage,
   },
   {
-    path: '/about/',
-    component: AboutPage,
+    path: '/dish/',
+    component: DishPage,
   },
   {
     path: '/form/',

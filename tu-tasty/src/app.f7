@@ -1,15 +1,15 @@
 
 <template>
   <div id="app">
-
     <!-- Left panel with cover effect-->
+    <!--
     <div class="panel panel-left panel-cover dark panel-init">
       <div class="view">
         <div class="page">
           <div class="navbar">
             <div class="navbar-bg"></div>
             <div class="navbar-inner">
-              <div class="title">Left Panel</div>
+              <div class="title">Treeeeee Panel</div>
             </div>
           </div>
           <div class="page-content">
@@ -18,6 +18,7 @@
         </div>
       </div>
     </div>
+    -->
     <!-- Right panel with reveal effect-->
     <div class="panel panel-right panel-reveal dark">
       <div class="view">
@@ -41,19 +42,19 @@
       <div class="toolbar toolbar-bottom tabbar-labels">
         <div class="toolbar-inner">
           <a href="#view-home" class="tab-link tab-link-active">
-            <i class="icon f7-icons if-not-md">house_fill</i>
-            <i class="icon material-icons if-md">home</i>
-            <span class="tabbar-label">Home</span>
+            <i class="icon material-icons if-not-md">watch_later</i>
+            <i class="icon material-icons if-md">watch_later</i>
+            <span class="tabbar-label">Popular Times</span>
           </a>
           <a href="#view-catalog" class="tab-link">
-            <i class="icon f7-icons if-not-md">square_list_fill</i>
-            <i class="icon material-icons if-md">view_list</i>
-            <span class="tabbar-label">Catalog</span>
+            <i class="icon material-icons if-not-md">restaurant_menu</i>
+            <i class="icon material-icons if-md">restaurant_menu</i>
+            <span class="tabbar-label">Meal Schedule</span>
           </a>
           <a href="#view-settings" class="tab-link">
-            <i class="icon f7-icons if-not-md">gear</i>
-            <i class="icon material-icons if-md">settings</i>
-            <span class="tabbar-label">Settings</span>
+            <i class="icon material-icons if-not-md">assignment_turned_in</i>
+            <i class="icon material-icons if-md">assignment_turned_in</i>
+            <span class="tabbar-label">Bookings</span>
           </a>
         </div>
       </div>
