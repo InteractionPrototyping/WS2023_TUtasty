@@ -76,14 +76,14 @@
     </div>
 
 
-    <!-- Popup -->
-    <div class="popup" id="my-popup">
+    <!-- Dish Rating Popup -->
+    <div class="popup" id="dish-rating-popup">
       <div class="view">
         <div class="page">
           <div class="navbar">
             <div class="navbar-bg"></div>
             <div class="navbar-inner">
-              <div class="title">Popup</div>
+              <div class="title">Dish Popup</div>
               <div class="right">
                 <a href="#" class="link popup-close">Close</a>
               </div>
@@ -91,7 +91,7 @@
           </div>
           <div class="page-content">
             <div class="block">
-              <p>Popup content goes here.</p>
+              <p>Dish Rating</p>
             </div>
           </div>
         </div>
