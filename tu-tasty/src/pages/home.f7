@@ -50,57 +50,6 @@
       <div class="block" id="popular-times">
         <!--the Popular Times graph goes here-->
 
-
-        <!--Counters part-->
-        <div class="block">
-          <div class="row">
-            <div class="col-25 counter-q2"> 1 </div>         
-            <div class="col-50" style="border: none; padding: 0px;" >
-              <div class="row no-gap">
-                <div class="col-50 counter-q3"> 2 </div>
-                <div class="col-50 counter-q4"> 3 </div>
-              </div>
-            </div>
-            <div class="col-25 counter-q2"> 4 </div>
-          </div>
-  
-          <div class="row">
-            <div class="col-30" style="border: none; padding: 0px; " >
-              <div class="row no-gap">
-                <div class="col-60 counter-q4" style="margin-bottom: 0px" > 5 </div>
-                <div class="col-40 counter-q3" style="margin-bottom: 0px" > 6 </div>
-              </div>
-  
-              <div class="row no-gap">
-                <div class="col-60 counter-q1" style="min-height: 47px; line-height: 37px;"> 9 </div>
-                <div class="col-40 counter-q2" style="min-height: 47px; line-height: 37px;"> 10 </div>
-              </div>
-            </div>
-  
-            <div class="col-30" style="border: none; padding: 0px;" >
-              <div class="col-100 counter-q1"> 7 </div>
-              <div class="col-100 counter-q3"> 11 </div>
-            </div>
-  
-            <div class="col-30" style="border: none; padding: 0px;" >
-              <div class="row no-gap">
-                <div class="col-100 counter-q1"> 8 </div>
-              </div>
-            </div>
-          </div>
-
-          <!--Expected Queues-->
-          <div style="text-align: center;">Expected Queues</div>
-          <div class="row no-gap">
-            <div class="col counter-q1" style="margin: 0px;padding: 0px;">short</div>
-            <div class="col counter-q2" style="min-height: 18px;"></div>
-            <div class="col counter-q3" style="height: 18px;"></div>
-            <div class="col counter-q4" style="margin: 0px;padding: 0px;" >long</div>
-          </div>
-    
-        </div>
-  
-
         <!--change style in app.css-->
         <p>
           Busy right now
