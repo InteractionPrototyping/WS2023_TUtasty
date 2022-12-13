@@ -7,6 +7,21 @@
       </div>
     </div>
     <div class="page-content">
+      <div class="block date-picker">
+        <div class="row">
+          <div class="col-20">
+            <a>
+              <i class="icon material-icons">arrow_left</i>
+            </a>
+          </div>
+          <div class="col-60">Date Picker</div>
+          <div class="col-20">
+            <a>
+              <i class="icon material-icons">arrow_right</i>
+            </a>
+          </div>
+        </div>
+      </div>
       <div class="list links-list">
         <ul>
           ${products.value.map((product) => $h`

@@ -1,3 +1,5 @@
+ 
+
 <template>
   <div class="page" data-name="home">
     <!-- Top Navbar -->
@@ -29,10 +31,69 @@
 
     <!-- Scrollable page content-->
     <div class="page-content">
-      <div class="block block-strong">
-        <p>Testing Git synchronicity - Maja. This is an example of tabs-layout application. The main point of such tabbed layout is that each tab contains independent view with its own routing and navigation.</p>
-
-        <p>Each tab/view may have different layout, different navbar type (dynamic, fixed or static) or without navbar like this tab.</p>
+      <div class="block date-picker">
+        <div class="row">
+          <div class="col-20">
+            <a>
+              <i class="icon material-icons">arrow_left</i>
+            </a>
+          </div>
+          <div class="col-60">Date Picker</div>
+          <div class="col-20">
+            <a>
+              <i class="icon material-icons">arrow_right</i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="block-title" style="text-align: center;">Popular Times</div>
+      <div class="block" id="popular-times">
+        <!--the Popular Times graph goes here-->
+        <div class="block">
+          <div class="row">
+            <div class="col-25 counter-q2"> 1 </div>         
+            <div class="col-50" style="border: none; padding: 0px;" >
+              <div class="row no-gap">
+                <div class="col-50 counter-q3"> 2 </div>
+                <div class="col-50 counter-q4"> 3 </div>
+              </div>
+            </div>
+            <div class="col-25 counter-q2"> 4 </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-30" style="border: none; padding: 0px; " >
+              <div class="row no-gap">
+                <div class="col-60 counter-q4" style="margin-bottom: 0px" > 5 </div>
+                <div class="col-40 counter-q3" style="margin-bottom: 0px" > 6 </div>
+              </div>
+  
+              <div class="row no-gap">
+                <div class="col-60 counter-q1" style="min-height: 47px; line-height: 37px;"> 9 </div>
+                <div class="col-40 counter-q2" style="min-height: 47px; line-height: 37px;"> 10 </div>
+              </div>
+            </div>
+  
+            <div class="col-30" style="border: none; padding: 0px;" >
+              <div class="col-100 counter-q1"> 7 </div>
+              <div class="col-100 counter-q3"> 11 </div>
+            </div>
+  
+  
+            <div class="col-30" style="border: none; padding: 0px;" >
+              <div class="row no-gap">
+                <div class="col-100 counter-q1"> 8 </div>
+              </div>
+            </div>
+  
+          </div>
+    
+        </div>
+  
+        <!--change style in app.css-->
+        <p>
+          Busy right now
+        </p>
       </div>
       <div class="block-title">Navigation</div>
       <div class="list">
@@ -52,30 +113,6 @@
             </a>
           </li>
         </ul>
-      </div>
-
-      <div class="block-title">Modals</div>
-      <div class="block block-strong">
-        <div class="row">
-          <div class="col-50">
-            <a href="#" class="button button-raised button-fill popup-open" data-popup="#dish-rating-popup">Dish Popup</a>
-          </div>
-          <div class="col-50">
-            <a href="#" class="button button-raised button-fill login-screen-open" data-login-screen="#my-login-screen">Login Screen</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="block-title">Panels</div>
-      <div class="block block-strong">
-        <div class="row">
-          <div class="col-50">
-            <a href="#" class="button button-raised button-fill panel-open" data-panel="left">Left Panel</a>
-          </div>
-          <div class="col-50">
-            <a href="#" class="button button-raised button-fill panel-open" data-panel="right">Right Panel</a>
-          </div>
-        </div>
       </div>
 
       <div class="list links-list">

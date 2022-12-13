@@ -4,6 +4,10 @@
   --f7-theme-color-rgb: 43, 100, 184;
   --f7-theme-color-shade: #235297;
   --f7-theme-color-tint: #3b77d1;
+  
+  --f7-grid-gap: 16px;
+  --f7-grid-row-gap: 0px;
+  --f7-grid-resize-handler-bg-color: rgba(0, 0, 0, 0.35);
 }
 
 /* Invert navigation bars to fill style */
@@ -21,6 +25,7 @@
   --f7-tabbar-link-inactive-color: rgba(255,255,255,0.54);
   --f7-sheet-border-color: transparent;
   --f7-tabbar-link-active-border-color: #fff;
+  --f7-grid-resize-handler-bg-color: rgba(255, 255, 255, 0.35);
 }
 .appbar,
 .navbar,
@@ -54,3 +59,35 @@
 }
 
 /* Your app custom styles here */
+
+#popular-times {
+  /*Popular Times graph styling goes here*/
+  text-align: center;
+}
+
+div[class*="col"] {
+  text-align: center;
+  border: none;
+  padding: 5px;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.counter-q1 {
+  background-color: #D9E3F2;
+}
+.counter-q2 {
+  background-color: #AAC1E3;
+}
+.counter-q3 {
+  background-color: #668FCC;
+  color: white;
+}
+.counter-q4 {
+  background-color: #2B64B8;
+  color: white;
+}
+
+.date-picker {
+  text-align: center;
+}
