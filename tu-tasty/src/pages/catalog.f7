@@ -1,14 +1,28 @@
 <template>
+<<<<<<< Updated upstream
   <div class="page" data-name="catalog">
     <div class="navbar">
       <div class="navbar-bg"></div>
       <div class="navbar-inner sliding">
         <div class="title">Catalog</div>
+=======
+  <div class="page co" data-name="meal-schedule">
+    <div class="navbar">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner al sliding">
+        <div class="left logo">
+          
+        </div>
+        <div class="right">
+              <i class="icon material-icons" id="ch" style="margin-right: 10px;">account_circle</i>
+              <i class="icon material-icons">settings</i>
+        </div>
+>>>>>>> Stashed changes
       </div>
     </div>
-    <div class="page-content">
+    <div class="page-content cok" >
 
-      <div class="block date-picker">
+      <div class="block date-picker" style="margin-bottom: 0;">
         <div class="row">
           <div class="col-20">
             <a>
@@ -25,50 +39,50 @@
       </div>
 
         <!--Counters part-->
-        <div class="block">
+        <div class="block" style="margin-top: 10px;">
           <div class="row">
-            <div class="col-25 counter-q2"> 1 </div>         
+            <div class="col-25 counter-q2" style="border-radius:10px;"> <div class="linea">1</div> </div>         
             <div class="col-50" style="border: none; padding: 0px;" >
               <div class="row no-gap">
-                <div class="col-50 counter-q3"> 2 </div>
-                <div class="col-50 counter-q4"> 3 </div>
+                <div class="col-50 counter-q3" style="border-radius:10px;"> <div class="linea">2</div>  </div>
+                <div class="col-50 counter-q4" style="border-radius:10px;"> <div class="linea">3</div>  </div>
               </div>
             </div>
-            <div class="col-25 counter-q2"> 4 </div>
+            <div class="col-25 counter-q2" style="border-radius:10px;"> <div class="linea">4</div>  </div>
           </div>
   
           <div class="row">
-            <div class="col-30" style="border: none; padding: 0px; " >
+            <div class="col-30" style="border: none; padding: 0px;" >
               <div class="row no-gap">
-                <div class="col-60 counter-q4" style="margin-bottom: 0px" > 5 </div>
-                <div class="col-40 counter-q3" style="margin-bottom: 0px" > 6 </div>
+                <div class="col-60 counter-q4" style="margin-bottom: 0px;border-radius:10px;" > <div class="linea">5</div>  </div>
+                <div class="col-40 counter-q3" style="margin-bottom: 0px;border-radius:10px;" > <div class="linea actc">6</div>  </div>
               </div>
   
               <div class="row no-gap">
-                <div class="col-60 counter-q1" style="min-height: 47px; line-height: 37px;"> 9 </div>
-                <div class="col-40 counter-q2" style="min-height: 47px; line-height: 37px;"> 10 </div>
+                <div class="col-60 counter-q1" style="min-height: 47px; line-height: 37px;border-radius:10px;"> <div class="linea">9</div>  </div>
+                <div class="col-40 counter-q2" style="min-height: 47px; line-height: 37px;border-radius:10px;"> <div class="linea">10</div>  </div>
               </div>
             </div>
   
             <div class="col-30" style="border: none; padding: 0px;" >
-              <div class="col-100 counter-q1"> 7 </div>
-              <div class="col-100 counter-q3"> 11 </div>
+              <div class="col-100 counter-q1" style="border-radius:10px;"> <div class="linea">7</div>  </div>
+              <div class="col-100 counter-q3" style="border-radius:10px;"> <div class="linea">11</div>  </div>
             </div>
   
             <div class="col-30" style="border: none; padding: 0px;" >
               <div class="row no-gap">
-                <div class="col-100 counter-q1"> 8 </div>
+                <div class="col-100 counter-q1" style="border-radius:10px;"> <div class="linea">8</div>  </div>
               </div>
             </div>
           </div>
 
           <!--Expected Queues-->
           <div style="text-align: center;">Expected Queues</div>
-          <div class="row no-gap">
-            <div class="col counter-q1" style="margin: 0px;padding: 0px;">short</div>
-            <div class="col counter-q2" style="min-height: 18px;"></div>
-            <div class="col counter-q3" style="height: 18px;"></div>
-            <div class="col counter-q4" style="margin: 0px;padding: 0px;" >long</div>
+          <div class="soka">
+            <div class="col counter-q1" style="margin:0;padding: 0px;border-radius:5px;">short</div>
+            <div class="col counter-q2" style="min-height: 18px;border-radius:5px;"></div>
+            <div class="col counter-q3" style="height: 18px;border-radius:5px;"></div>
+            <div class="col counter-q4" style="margin: 0px;padding: 0px;border-radius:5px;" >long</div>
           </div>
     
         </div>
@@ -76,12 +90,74 @@
 
 
       <!-- dish card -->
-      <div class="list media-list dish-card">
-        <ul>
+      <div class="list media-list dish-card mea" style="width:95%;margin:auto;">
+        <ul id="al">
           <li>
+            <!--<a href="/dish/" class="item-link item-content">-->
+            <a href="javascript:();" class="item-link item-content" style="padding-left:0;">
+              <div class="item-media">
+                <img src="https://i.postimg.cc/9QKx31mr/20221213172950.png" width="80" />
+              </div>
+              <div class="item-inner">
+                <div class="item-title-row">
+                  <div class="item-title">Spaghetti with sauce </div>
+                  <div class="item-after">
+                    <i class="icon material-icons" style="color:#eeb345; font-size: 15px;">grade</i>
+                    4.5(20+)
+                  </div>
+                </div>
+                <div class="item-subtitle" >fleischlos, bio</div>
+                <div class="item-title">€ 0,80/100g
+                  <i class="icon material-icons" style="padding-left: 70px;">local_grocery_store</i>
+                  <label class="checkbox" style="padding-left: 15px;" >
+                    <!-- checkbox input -->
+                    <input type="checkbox" value="1"/>
+                    <!-- checkbox icon -->
+                    <i class="icon-checkbox"></i>
+                  </label>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <!--<a href="/dish/" class="item-link item-content">-->
+            <a href="javascript:();" class="item-link item-content" style="padding-left:0;">
+              <div class="item-media">
+                <img src="https://i.postimg.cc/9QKx31mr/20221213172950.png" width="80" />
+              </div>
+              <div class="item-inner">
+                <div class="item-title-row">
+                  <div class="item-title">Spaghetti with sauce </div>
+                  <div class="item-after">
+                    <i class="icon material-icons" style="color:#eeb345; font-size: 15px;">grade</i>
+                    4.5(20+)
+                  </div>
+                </div>
+                <div class="item-subtitle" >fleischlos, bio</div>
+                <div class="item-title">€ 0,80/100g
+                  <i class="icon material-icons" style="padding-left: 70px;">local_grocery_store</i>
+                  <label class="checkbox" style="padding-left: 15px;" >
+                    <!-- checkbox input -->
+                    <input type="checkbox" value="1"/>
+                    <!-- checkbox icon -->
+                    <i class="icon-checkbox"></i>
+                  </label>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+<<<<<<< Updated upstream
             <a href="#" class="item-link item-content">
               <div class="item-media"><img src="https://i.postimg.cc/9QKx31mr/20221213172950.png"
                   width="80" /></div>
+=======
+            <!--<a href="/dish/" class="item-link item-content">-->
+            <a href="javascript:();" class="item-link item-content" style="padding-left:0;">
+              <div class="item-media">
+                <img src="https://i.postimg.cc/9QKx31mr/20221213172950.png" width="80" />
+              </div>
+>>>>>>> Stashed changes
               <div class="item-inner">
                 <div class="item-title-row">
                   <div class="item-title">Spaghetti with sauce </div>
@@ -92,18 +168,48 @@
                 </div>
                 <div class="item-subtitle" >fleischlos, bio</div>
                 <div class="item-title">€ 0,80/100g
+<<<<<<< Updated upstream
                   <i class="icon material-icons if-md" style="padding-left: 100px;">local_grocery_store</i>
+=======
+                  <i class="icon material-icons" style="padding-left: 70px;">local_grocery_store</i>
+>>>>>>> Stashed changes
                   <label class="checkbox" style="padding-left: 15px;" >
                     <!-- checkbox input -->
-                    <input type="checkbox" />
+                    <input type="checkbox" value="1"/>
                     <!-- checkbox icon -->
                     <i class="icon-checkbox"></i>
                   </label>
                 </div>
               </div>
-              
-            </a></li>
-      
+            </a>
+          </li>
+          <li>
+            <!--<a href="/dish/" class="item-link item-content">-->
+            <a href="javascript:();" class="item-link item-content" style="padding-left:0;">
+              <div class="item-media">
+                <img src="https://i.postimg.cc/9QKx31mr/20221213172950.png" width="80" />
+              </div>
+              <div class="item-inner">
+                <div class="item-title-row">
+                  <div class="item-title">Spaghetti with sauce </div>
+                  <div class="item-after">
+                    <i class="icon material-icons" style="color:#eeb345; font-size: 15px;">grade</i>
+                    4.5(20+)
+                  </div>
+                </div>
+                <div class="item-subtitle" >fleischlos, bio</div>
+                <div class="item-title">€ 0,80/100g
+                  <i class="icon material-icons" style="padding-left: 70px;">local_grocery_store</i>
+                  <label class="checkbox" style="padding-left: 15px;" >
+                    <!-- checkbox input -->
+                    <input type="checkbox" value="1"/>
+                    <!-- checkbox icon -->
+                    <i class="icon-checkbox"></i>
+                  </label>
+                </div>
+              </div>
+            </a>
+          </li>
         </ul>
       </div>
       
@@ -122,11 +228,91 @@
     </div>
   </div>
 </template>
+<style>
+  .navbar {
+    height: 60px;
+    box-shadow: none;
+    overflow:hidden
+}
+.co{
+  padding-bottom: 42px;
+  background-color:#2b64b8;
+}
+.md .navbar-inner{
+  justify-content: space-between;
+  
+}
+.al{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.cok{
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background:white;
+  margin-top: 60px;
+}
+  .mea{
+    border-radius: 10px;
+  }
+  .navbar-inner{
+    background-color: #2b64b8;
+  }
+  .soka{
+    display: flex;
+    justify-content: space-around;
+  }
+  .logo{
+    width: 80px;
+    height: 32px;
+    margin-left: 20px;
+    background-image:url(../images/logo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
+  .right{
+    margin-right: 20px;
+  }
+    .soka .counter-q1,.soka .counter-q2,.soka .counter-q3,.soka .counter-q4{
+      width: 25%;
+      margin: 0 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .list ul:before, .list ul:after{
+      display: none;
+    }
+    .list ul li{
+      background: #f4f4f4;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+        .list ul li:hover{
+          background: #e0e8f6;
+        }
+    .linea{
+      width:20px;
+      height: 20px;
+      border-radius:100%;
+      background: white;
+      margin: auto;
+      line-height: 20px;
+      color: #333;
+    }
+    .actc{
+      background: #edb643;
+      color: white;
+    }
+</style>
 <script>
   export default (props, { $store }) => {
+    return $render;
     const products = $store.getters.products;
-
     const addProduct = () => {
       $store.dispatch('addProduct', {
         id: '4',
@@ -134,8 +320,7 @@
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempora similique reiciendis, error nesciunt vero, blanditiis pariatur dolor, minima sed sapiente rerum, dolorem corrupti hic modi praesentium unde saepe perspiciatis.'
       });
     }
-
-    return $render;
+    
   }
 
 </script>

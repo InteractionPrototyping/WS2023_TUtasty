@@ -89,5 +89,14 @@ div[class*="col"] {
 }
 
 .date-picker {
+  height: 40px;
   text-align: center;
+<<<<<<< Updated upstream
+=======
+  margin-top: -30px;
+}
+
+.page-content .tab {
+  padding-top: 0;
+>>>>>>> Stashed changes
 }
