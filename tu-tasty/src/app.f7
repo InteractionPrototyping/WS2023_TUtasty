@@ -143,6 +143,7 @@
   </div>
 </template>
 <style>
+   /* Style of the bottom navigation bar  */
   .toolbar{
     background-color: white;
     border-top-left-radius: 20px;
@@ -150,12 +151,17 @@
     overflow: hidden;
     box-shadow: 3px 3px 8px #ccc;
   }
+  .ios-translucent-bars .toolbar {
+    background-color: white;
+  }
     .tabbar .tab-link-active, .tabbar-labels .tab-link-active {
     color:#2c59a9;
   }
+
   .tabbar a, .tabbar-labels a{
     color:#bcbcbc;
   }
+
 </style>
 
 <script>
