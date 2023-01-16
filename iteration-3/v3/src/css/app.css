@@ -63,7 +63,6 @@
 #popular-times {
   /*Popular Times graph styling goes here*/
   text-align: center;
-  display: flex;
 }
 
 div[class*="col"] {
@@ -90,46 +89,9 @@ div[class*="col"] {
 }
 
 .date-picker {
-  height: 40px;
   text-align: center;
-  margin-bottom: -30px;
-  margin-top:-30px;
 }
 
 .page-content .tab {
   padding-top: 0;
-}
-
-.popular-times-levels {
-  flex-grow: 1;
-  display: flex;
-  align-items:space-between;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.popular-times-graph {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  height: 200px;
-  position: relative;
-}
-
-.popular-times-lines {
-  position: absolute;
-  display: flex;
-  align-items:space-between;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 200px;
-  width: 100%;
-}
-
-.bar {
-  width: 20px;
-}
-
-.bar-times {
-  margin: 0 13px;
 }

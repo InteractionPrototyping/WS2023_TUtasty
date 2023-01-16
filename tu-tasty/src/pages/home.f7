@@ -47,14 +47,41 @@
         </div>
       </div>
       <div class="block-title" style="text-align: center;">Popular Times</div>
-      <div class="block" id="popular-times">
+      <div class="block" id="popular-times" style="margin-bottom:0;">
         <!--the Popular Times graph goes here-->
 
-        <!--change style in app.css-->
-        <p>
-          Busy right now
-        </p>
+        <div class="popular-times-levels">
+          <div style="margin-top: 40px;">high</div>
+          <div>medium</div>
+          <div style="margin-bottom: 20px;">low</div>
+        </div>
+        <div style="flex-grow:4;">
+          <div class="popular-times-graph">
+            <div class="popular-times-lines">
+                <div style="margin: 50px 0px 10px; border-style: solid; border-width: 1px; height: 0; border-color: #889DC2;"></div>
+                <div style="margin: 10px 0px; border-style: dashed; border-width: 1px; height: 0; border-color: #889DC2;"></div>
+                <div style="margin: 10px 0px; border-style: solid; border-width: 1px; height: 0; border-color: #889DC2;"></div>
+            </div>
+            <div class="bar" style="height: 40px; background-color: #D9E3F2;"></div>
+            <div class="bar" style="height: 100px; background-color: #668FCC;"></div>
+            <div class="bar" style="height: 140px; background-color: #F8B11E;"></div>
+            <div class="bar" style="height: 100px; background-color: #668FCC;"></div>
+            <div class="bar" style="height: 120px; background-color: #2B64B8;"></div>
+            <div class="bar" style="height: 60px; background-color: #D9E3F2;"></div>
+          </div>
+          <div class="popular-times-graph" style="height: 20px;">
+            <div class="bar-times">11</div>
+            <div class="bar-times">12</div>
+            <div class="bar-times">13</div>
+            <div class="bar-times">14</div>
+          </div>
+        </div>
+        <div class="popular-times-levels"></div>
       </div>
+      
+      <p style="display: flex; justify-content: center; font-style: italic;">
+        busy right now
+      </p>
 
     </div>
   </div>
