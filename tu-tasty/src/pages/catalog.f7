@@ -1,12 +1,21 @@
 <template>
-  <div class="page" data-name="meal-schedule">
+  <div class="page background" data-name="meal-schedule" style="  padding-bottom: 42px;
+  background-color:#2b64b8;">
     <div class="navbar">
       <div class="navbar-bg"></div>
       <div class="navbar-inner sliding">
-        <div class="title">Meal Schedule</div>
+        <div class="left logo"></div>
+        <div class="right" style="margin-right: 10px;">
+          <i class="icon material-icons" id="ch" style="margin-right: 10px;">account_circle</i>
+          <i class="icon material-icons">settings</i>
+        </div>
       </div>
     </div>
-    <div class="page-content">
+    
+    <div class="page-content" style="border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background:white;
+    margin-top: 60px;">
 
       <div class="block date-picker">
         <div class="row">
@@ -15,7 +24,21 @@
               <i class="icon material-icons">arrow_left</i>
             </a>
           </div>
-          <div class="col-60">Date Picker</div>
+          <div class="col-60 pickerax" style="margin-bottom: 20px;">
+            <div class="list no-hairlines-md">
+              <ul>
+                <li>
+                  <div class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-input-wrap">
+                        <input type="text" placeholder="Your birth date" readonly="readonly" id="demo-calendar-default" />
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
           <div class="col-20">
             <a>
               <i class="icon material-icons">arrow_right</i>
@@ -25,39 +48,39 @@
       </div>
 
         <!--Counters part-->
-        <div class="block">
+        <div class="block" style="margin-top: 50px;">
           <div class="row">
-            <div class="col-25 counter-q2"> 1 </div>         
+            <div class="col-25 counter-q2" style="border-radius:5px;"> <div class="circle">1</div> </div>         
             <div class="col-50" style="border: none; padding: 0px;" >
               <div class="row no-gap">
-                <div class="col-50 counter-q3"> 2 </div>
-                <div class="col-50 counter-q4"> 3 </div>
+                <div class="col-50 counter-q3" style="border-radius:5px;"> <div class="circle">2</div>  </div>
+                <div class="col-50 counter-q4" style="border-radius:5px;"> <div class="circle">3</div>  </div>
               </div>
             </div>
-            <div class="col-25 counter-q2"> 4 </div>
+            <div class="col-25 counter-q2" style="border-radius:5px;"> <div class="circle">4</div>  </div>
           </div>
   
           <div class="row">
-            <div class="col-30" style="border: none; padding: 0px; " >
+            <div class="col-30" style="border: none; padding: 0px;" >
               <div class="row no-gap">
-                <div class="col-60 counter-q4" style="margin-bottom: 0px" > 5 </div>
-                <div class="col-40 counter-q3" style="margin-bottom: 0px" > 6 </div>
+                <div class="col-60 counter-q4" style="margin-bottom: 0px;border-radius:5px;" > <div class="circle">5</div>  </div>
+                <div class="col-40 counter-q3" style="margin-bottom: 0px;border-radius:5px;" > <div class="circle actc">6</div>  </div>
               </div>
   
               <div class="row no-gap">
-                <div class="col-60 counter-q1" style="min-height: 47px; line-height: 37px;"> 9 </div>
-                <div class="col-40 counter-q2" style="min-height: 47px; line-height: 37px;"> 10 </div>
+                <div class="col-60 counter-q1" style="min-height: 47px; line-height: 37px;border-radius:5px;"> <div class="circle">9</div>  </div>
+                <div class="col-40 counter-q2" style="min-height: 47px; line-height: 37px;border-radius:5px;"> <div class="circle">10</div>  </div>
               </div>
             </div>
   
             <div class="col-30" style="border: none; padding: 0px;" >
-              <div class="col-100 counter-q1"> 7 </div>
-              <div class="col-100 counter-q3"> 11 </div>
+              <div class="col-100 counter-q1" style="border-radius:5px;"> <div class="circle">7</div>  </div>
+              <div class="col-100 counter-q3" style="border-radius:5px;"> <div class="circle">11</div>  </div>
             </div>
   
             <div class="col-30" style="border: none; padding: 0px;" >
               <div class="row no-gap">
-                <div class="col-100 counter-q1"> 8 </div>
+                <div class="col-100 counter-q1" style="border-radius:5px;"> <div class="circle">8</div>  </div>
               </div>
             </div>
           </div>
@@ -65,10 +88,10 @@
           <!--Expected Queues-->
           <div style="text-align: center;">Expected Queues</div>
           <div class="row no-gap">
-            <div class="col counter-q1" style="margin: 0px;padding: 0px;">short</div>
-            <div class="col counter-q2" style="min-height: 18px;"></div>
-            <div class="col counter-q3" style="height: 18px;"></div>
-            <div class="col counter-q4" style="margin: 0px;padding: 0px;" >long</div>
+            <div class="col counter-q1" style="margin: 0px;padding: 0px; border-radius:2px">short</div>
+            <div class="col counter-q2" style="min-height: 18px;border-radius:2px"></div>
+            <div class="col counter-q3" style="height: 18px;border-radius:2px"></div>
+            <div class="col counter-q4" style="margin: 0px;padding: 0px;border-radius:2px" >long</div>
           </div>
     
         </div>
@@ -76,16 +99,16 @@
 
 
       <!-- dish card -->
-      <div class="list media-list dish-card">
-        <ul>
+      <div class="list media-list dish-card" style="width:95%;margin:auto;">
+        <ul style="border-radius: 10px;">
           <li>
-            <a href="/dish/" class="item-link item-content">
+            <a href="/dish/" class="item-link item-content" style="padding-left:0;" >
               <div class="item-media">
                 <img src="https://i.postimg.cc/9QKx31mr/20221213172950.png" width="80" />
               </div>
               <div class="item-inner">
                 <div class="item-title-row">
-                  <div class="item-title">Spaghetti with sauce </div>
+                  <div class="item-titl">Spaghetti with sauce </div>
                   <div class="item-after">
                     <i class="icon material-icons" style="color:#eeb345; font-size: 15px;">grade</i>
                     4.5(20+)
@@ -93,10 +116,10 @@
                 </div>
                 <div class="item-subtitle" >fleischlos, bio</div>
                 <div class="item-title">€ 0,80/100g
-                  <i class="icon material-icons" style="padding-left: 100px;">local_grocery_store</i>
+                  <i class="icon material-icons" style="padding-left: 70px;">local_grocery_store</i>
                   <label class="checkbox" style="padding-left: 15px;" >
                     <!-- checkbox input -->
-                    <input type="checkbox" />
+                    <input type="checkbox" value="1" />
                     <!-- checkbox icon -->
                     <i class="icon-checkbox"></i>
                   </label>
@@ -112,19 +135,76 @@
   </div>
 </template>
 
-<script>
-  export default (props, { $store }) => {
-    const products = $store.getters.products;
+<style>
+  .logo{
+    width: 80px;
+    height: 32px;
+    margin-left: 20px;
+    background-image:url(../images/logo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-    const addProduct = () => {
-      $store.dispatch('addProduct', {
-        id: '4',
-        title: 'Apple iPhone 12',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempora similique reiciendis, error nesciunt vero, blanditiis pariatur dolor, minima sed sapiente rerum, dolorem corrupti hic modi praesentium unde saepe perspiciatis.'
-      });
+  .navbar {
+    height: 60px;
+    box-shadow: none;
+    overflow:hidden
+  }
+  .circle{
+      width:25px;
+      height: 25px;
+      border-radius:100%;
+      background: white;
+      margin: auto;
+      line-height: 25px;
+      color: #333;
+    }
+    .icon-checkbox, .checkbox i {
+      border-radius: 0;
+      margin-right: 20px;
+    }
+    .list ul:after ,.list ul::before{
+      display: none;
+    }
+    .list .item-titl{
+      font-weight: bold;
+    }
+    .list ul li:hover{
+          background: #e0e8f6;
+        }
+
+    .list ul li{
+      background: #f1f1f1;
+      border-radius:10px
+    }
+    .pickerax .list{
+      margin: 0;
+      margin-top: -10px;
     }
 
+</style>
+<script>
+  export default (props, { $, $f7, $on }) => {
+    let calendarDefault;
+    let calendarDateFormat;
+    let calendarDateTime;
+    let calendarMultiple;
+    let calendarRange;
+    let calendarModal;
+    let calendarEvents;
+    let calendarDisabled;
+    let calendarInline;
+
+    $on('pageInit', () => {
+      // Default
+      calendarDefault = $f7.calendar.create({
+        inputEl: '#demo-calendar-default',
+      });
+    });
+
     return $render;
-  }
+  };
+
 
 </script>

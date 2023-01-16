@@ -49,6 +49,7 @@
       <div class="block-title" style="text-align: center;">Popular Times</div>
       <div class="block" id="popular-times" style="margin-bottom:0;">
         <!--the Popular Times graph goes here-->
+
         <div class="popular-times-levels">
           <div style="margin-top: 40px;">high</div>
           <div>medium</div>
@@ -81,6 +82,7 @@
       <p style="display: flex; justify-content: center; font-style: italic;">
         busy right now
       </p>
+
     </div>
   </div>
 </template>
