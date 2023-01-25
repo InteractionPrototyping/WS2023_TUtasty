@@ -29,3 +29,9 @@ var app = new Framework7({
   // App routes
   routes: routes,
 });
+
+function toggleVisibility (elem,number) {
+  var i = document.getElementByTagName('i');
+  console.log(elem)
+  console.log(i)
+}

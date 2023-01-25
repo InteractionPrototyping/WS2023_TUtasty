@@ -2,9 +2,9 @@
 import HomePage from '../pages/home.f7';
 import DishPage from '../pages/dish.f7';
 import FormPage from '../pages/form.f7';
-import CatalogPage from '../pages/catalog.f7';
+import MealSchedulePage from '../pages/meal-schedule.f7';
 import ProductPage from '../pages/product.f7';
-import SettingsPage from '../pages/settings.f7';
+import BookingsPage from '../pages/bookings.f7';
 
 import DynamicRoutePage from '../pages/dynamic-route.f7';
 import RequestAndLoad from '../pages/request-and-load.f7';
@@ -16,7 +16,7 @@ var routes = [
     component: HomePage,
   },
   {
-    path: '/dish/',
+    path: '/dish/:id',
     component: DishPage,
   },
   {
@@ -24,16 +24,16 @@ var routes = [
     component: FormPage,
   },
   {
-    path: '/catalog/',
-    component: CatalogPage,
+    path: '/meal-schedule/',
+    component: MealSchedulePage,
   },
   {
     path: '/product/:id/',
     component: ProductPage,
   },
   {
-    path: '/settings/',
-    component: SettingsPage,
+    path: '/bookings/',
+    component: BookingsPage,
   },
 
   {

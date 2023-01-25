@@ -46,12 +46,12 @@
             <i class="icon material-icons if-md">watch_later</i>
             <span class="tabbar-label">Popular Times</span>
           </a>
-          <a href="#view-catalog" class="tab-link">
+          <a href="#view-meal-schedule" class="tab-link">
             <i class="icon material-icons if-not-md">restaurant_menu</i>
             <i class="icon material-icons if-md">restaurant_menu</i>
             <span class="tabbar-label">Meal Schedule</span>
           </a>
-          <a href="#view-settings" class="tab-link">
+          <a href="#view-bookings" class="tab-link">
             <i class="icon material-icons if-not-md">assignment_turned_in</i>
             <i class="icon material-icons if-md">assignment_turned_in</i>
             <span class="tabbar-label">Bookings</span>
@@ -65,12 +65,12 @@
       </div>
 
       <!-- Catalog View -->
-      <div id="view-catalog" class="view view-init tab" data-name="catalog" data-url="/catalog/">
+      <div id="view-meal-schedule" class="view view-init tab" data-name="meal-schedule" data-url="/meal-schedule/">
         <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
       </div>
 
       <!-- Settings View -->
-      <div id="view-settings" class="view view-init tab" data-name="settings" data-url="/settings/">
+      <div id="view-bookings" class="view view-init tab" data-name="bookings" data-url="/bookings/">
         <!-- Settings page will be loaded here dynamically from /settings/ route -->
       </div>
     </div>

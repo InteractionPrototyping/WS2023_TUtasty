@@ -17,21 +17,22 @@
         <span class="if-not-md"></span>
       </a>
 
+      <!--Dish Overview-->
       <div class="list media-list dish-card">
         <ul>
           <li>
             <div class="item-link item-content" style="background-color: white; margin-bottom: 30px;">
               <div class="item-media">
-                  <img src="https://i.postimg.cc/9QKx31mr/20221213172950.png" width="80" />
+                  <img src="${dish.url}" width="60" style="border-radius: 20%;" />
                 </div>
                 <div style="width:80%; position: relative">
-                  <div class="item-title" style="overflow:inherit; --f7-list-item-title-white-space: wrap;">Spaghetti with Tomato Sauce and Spinach</div>
-                  <div class="item-subtitle" >fleischlos, bio</div>
-                  <div class="item-title">€ 0,80/100g</div>
+                  <div class="item-title" style="overflow:inherit; --f7-list-item-title-white-space: wrap;">${dish.title}</div>
+                  <div class="item-subtitle" >${dish.type}</div>
+                  <div class="item-title">${dish.price}</div>
                 <div style="position: absolute; bottom: 11px; right: 20px">
                   <div style="display: flex; justify-content: space-evenly; margin-top: 24px;">
                     <i class="icon material-icons" style="color:#F8B11E">grade</i>
-                    <div class="item-subtitle" >4,5 (221)</div>
+                    <div class="item-subtitle" >${dish.averageRating} (${dish.numRatings})</div>
                   </div>
                 </div>
                 </div>
@@ -40,18 +41,33 @@
         </ul>
       </div>
 
+      <!--Toolbar Selector with Booking, Ratings, Info-->
       <div class="toolbar tabbar" style="box-shadow:none;">
         <div class="toolbar-inner">
+          <!--Booking-->
           <a href="#tab-booking" class="tab-link ratings tab-link-active">
             <div style="display: flex; align-items: normal;">
-              <i class="icon material-icons" style="font-size: 20px;">assignment_turned_in</i>
-              spaceBooking
+              <i class="icon material-icons" style="font-size: 20px; margin-right: 5px">assignment_turned_in</i>
+              Booking
             </div>
           </a>
-          <a href="#tab-ratings" class="tab-link ratings">Ratings</a>
-          <a href="#tab-info" class="tab-link ratings">Info</a>
+          <!--Ratigns-->
+          <a href="#tab-ratings" class="tab-link ratings">
+            <div style="display: flex; align-items: normal;">
+              <i class="icon material-icons" style="font-size: 20px; margin-right: 5px">star</i>
+              Ratings
+            </div>
+          </a>
+          <!--Info-->
+          <a href="#tab-info" class="tab-link ratings">
+            <div style="display: flex; align-items: normal;">
+              <i class="icon material-icons" style="font-size: 20px; margin-right: 5px">info</i>
+              Info
+            </div>
+          </a>
         </div>
       </div>
+      <!--Toolbar Tabs-->
       <div class="tabs-animated-wrap">
         <div class="tabs">
           <!--BOOKING-->
@@ -68,7 +84,7 @@
             </div>
             <div class="row">
               <div class="col-25"></div>
-              <button class="col-50 button button-fill button-round">BOOK THIS DISH
+              <button class="col-50 button button-fill button-round" style="padding: 20px">BOOK THIS DISH
               </button>
               <div class="col-25"></div>
             </div>
@@ -84,27 +100,93 @@
             <div class="block">
               <div style="display:flex; justify-content: space-evenly;">
                 <a href="#" class="popup-open" data-popup="#dish-rating-popup">
-                  <i class="icon material-icons" style="color:#eeb345;">star_border</i>
+                  <i class="icon material-icons" style="color:#eeb345;">star</i>
                 </a>
                 <a href="#" class="popup-open" data-popup="#dish-rating-popup">
-                  <i class="icon material-icons" style="color:#eeb345;">star_border</i>
+                  <i class="icon material-icons" style="color:#eeb345;">star</i>
                 </a>
                 <a href="#" class="popup-open" data-popup="#dish-rating-popup">
-                  <i class="icon material-icons" style="color:#eeb345;">star_border</i>
+                  <i class="icon material-icons" style="color:#eeb345;">star</i>
                 </a>
                 <a href="#" class="popup-open" data-popup="#dish-rating-popup">
-                  <i class="icon material-icons" style="color:#eeb345;">star_border</i>
+                  <i class="icon material-icons" style="color:#eeb345;">star</i>
                 </a>
                 <a href="#" class="popup-open" data-popup="#dish-rating-popup">
                   <i class="icon material-icons" style="color:#eeb345;">star_border</i>
                 </a>
               </div>
-              <div>
+              <div style="margin-top: 10px">
                 <div class="chip">
-                  <div class="chip-label">Example Chip</div>
+                  <div class="chip-label">too salty 37%</div>
                 </div>
                 <div class="chip">
-                  <div class="chip-label">Another Chip</div>
+                  <div class="chip-label">too sweet 4%</div>
+                </div>
+              </div>
+              <div class="block dish-block">
+                <div style="display: flex">
+                  <div style="margin-right: 30px; font-weight: 700;">
+                    Martha
+                  </div>
+                  <div style="display:flex; justify-content: space-between;">
+                    
+                    <a href="#" class="popup-open" data-popup="#dish-rating-popup">
+                      <i class="icon material-icons" style="color:#eeb345;">star</i>
+                    </a>
+                    <a href="#" class="popup-open" data-popup="#dish-rating-popup">
+                      <i class="icon material-icons" style="color:#eeb345;">star</i>
+                    </a>
+                    <a href="#" class="popup-open" data-popup="#dish-rating-popup">
+                      <i class="icon material-icons" style="color:#eeb345;">star</i>
+                    </a>
+                    <a href="#" class="popup-open" data-popup="#dish-rating-popup">
+                      <i class="icon material-icons" style="color:#eeb345;">star</i>
+                    </a>
+                    <a href="#" class="popup-open" data-popup="#dish-rating-popup">
+                      <i class="icon material-icons" style="color:#eeb345;">star</i>
+                    </a>
+                  </div>
+                </div>
+                <p>
+                  Great taste! Loved it
+                </p>
+                <p>
+                  Click on “Book Meal” to let us know what you will be eating. If you do so at least one week in advance,
+                  you will receive a discount on the meal at checkout.
+                </p>
+              </div>
+              <div class="block dish-block">
+                <div style="display: flex">
+                  <div style="margin-right: 30px; font-weight: 700;">
+                    Karl
+                  </div>
+                  <div style="display:flex; justify-content: space-between;">
+                    
+                    <a href="#" class="popup-open" data-popup="#dish-rating-popup">
+                      <i class="icon material-icons" style="color:#eeb345;">star</i>
+                    </a>
+                    <a href="#" class="popup-open" data-popup="#dish-rating-popup">
+                      <i class="icon material-icons" style="color:#eeb345;">star</i>
+                    </a>
+                    <a href="#" class="popup-open" data-popup="#dish-rating-popup">
+                      <i class="icon material-icons" style="color:#eeb345;">star</i>
+                    </a>
+                    <a href="#" class="popup-open" data-popup="#dish-rating-popup">
+                      <i class="icon material-icons" style="color:#eeb345;">star</i>
+                    </a>
+                    <a href="#" class="popup-open" data-popup="#dish-rating-popup">
+                      <i class="icon material-icons" style="color:#eeb345;">star_border</i>
+                    </a>
+                    <div style="width:60px; font-weight: 700;">
+
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Ehrenmensa
+                </p>
+                <div class="chip" style="background-color: white; margin-left:0">
+                  <div class="chip-label">too salty</div>
                 </div>
               </div>
             </div>
@@ -127,7 +209,23 @@
   </div>
 </template>
 <script>
-  export default () => {
+  import mockDishes from '../js/dishes.js';
+
+
+  export default function (props, {$f7route }) {
+    let dishes = mockDishes();
+    let dish;
+    console.log($f7route.params)
+    for (let i = 0; i< dishes.length; i++) {
+      if(dishes[i].id == $f7route.params.id) {
+        dish=dishes[i]
+        break;
+      }
+    }
     return $render;
   };
+
+  window.logshit = () => {
+    console.log("shit")
+  }
 </script>

@@ -98,23 +98,21 @@ div[class*="col"] {
   margin-bottom: 16px;
 }
 
-.counter-q0 {
-  background-color: #F8B11E;
-}
+
 
 .counter-q1 {
   background-color: #D9E3F2;
 }
 .counter-q2 {
-  background-color: #AAC1E3;
+  background-color: #86A7D7;
 }
 .counter-q3 {
-  background-color: #668FCC;
-  color: white;
-}
-.counter-q4 {
   background-color: #2B64B8;
   color: white;
+}
+
+.counter-q0 {
+  background-color: #F8B11E;
 }
 
 .date-picker {
@@ -221,12 +219,14 @@ div[class*="col"] {
     margin: auto;
   }
 
-  .dish-card ul li a {
+  .dish-card-div {
     margin-bottom: 10px;
     border-radius: 10px;
     padding-left:0; 
     display: flex; 
     position:relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .selected-dish {
@@ -272,3 +272,12 @@ div[class*="col"] {
     padding: 5px;
     height: min-content;
   }
+
+.block-title {
+  color: #1563BE;
+}
+
+.chip {
+  background-color: #eeeeee;
+  margin: 5px;
+}
