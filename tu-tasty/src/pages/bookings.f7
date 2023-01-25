@@ -13,6 +13,10 @@
 
   <div class="page-content" style="padding-top:0;">
 
+    <p style="text-align: center; padding-left: 50px; padding-right: 50px">
+      Bookings need to be cancelled at least one week in advance.
+    </p>
+
     <div class="block-title" style="text-align: center;">TODAY</div>
 
     <!-- dish card with delete -->
