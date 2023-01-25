@@ -1,43 +1,62 @@
 <template>
-  <div class="page" data-name="dish">
+  <div class="page background" data-name="dish">
     <div class="navbar">
       <div class="navbar-bg"></div>
       <div class="navbar-inner sliding">
-        <div class="left">
-          <a href="#" class="link back">
-            <i class="icon icon-back"></i>
-            <span class="if-not-md">Back</span>
-          </a>
+        <div class="left logo"></div>
+        <div class="right">
+          <i class="icon material-icons" id="ch" style="margin-right: 10px;">account_circle</i>
+          <i class="icon material-icons">settings</i>
         </div>
-        <div class="title">Dish Page</div>
       </div>
     </div>
-    <div class="page-content">
-      <div class="dish-card" style="display: flex;">
-        <div style="align-items: center; display: flex">
-          <img src="https://i.postimg.cc/9QKx31mr/20221213172950.png" width="80"/>
-        </div>
-        <div>
-          <div class="block-title" style="margin-top: 5px">
-            Spaghetti with sauce
-            <i class="icon material-icons" style="color:#eeb345; font-size: 15px;">grade</i> 4.5(20+)
-          </div>
-          <div class="block-title" style="font-weight: 400; margin-top: 0">fleischlos, bio</div>
-          <div class="block-title" style="font-weight: 400; margin-top: 0">€ 0,80/100g</div>
-        </div>
+
+    <div class="page-content" style="padding-top: 20px;">
+      <a href="#" class="link back" style="margin-left:20px;">
+        <i class="icon icon-back"></i>
+        <span class="if-not-md"></span>
+      </a>
+
+      <div class="list media-list dish-card">
+        <ul>
+          <li>
+            <div class="item-link item-content" style="background-color: white; margin-bottom: 30px;">
+              <div class="item-media">
+                  <img src="https://i.postimg.cc/9QKx31mr/20221213172950.png" width="80" />
+                </div>
+                <div style="width:80%; position: relative">
+                  <div class="item-title" style="overflow:inherit; --f7-list-item-title-white-space: wrap;">Spaghetti with Tomato Sauce and Spinach</div>
+                  <div class="item-subtitle" >fleischlos, bio</div>
+                  <div class="item-title">€ 0,80/100g</div>
+                <div style="position: absolute; bottom: 11px; right: 20px">
+                  <div style="display: flex; justify-content: space-evenly; margin-top: 24px;">
+                    <i class="icon material-icons" style="color:#F8B11E">grade</i>
+                    <div class="item-subtitle" >4,5 (221)</div>
+                  </div>
+                </div>
+                </div>
+              </div>
+          </li>
+        </ul>
       </div>
 
-      <div class="toolbar tabbar">
+      <div class="toolbar tabbar" style="box-shadow:none;">
         <div class="toolbar-inner">
-          <a href="#tab-booking" class="tab-link tab-link-active">Booking</a>
-          <a href="#tab-ratings" class="tab-link">Ratings</a>
-          <a href="#tab-info" class="tab-link">Info</a>
+          <a href="#tab-booking" class="tab-link ratings tab-link-active">
+            <div style="display: flex; align-items: normal;">
+              <i class="icon material-icons" style="font-size: 20px;">assignment_turned_in</i>
+              spaceBooking
+            </div>
+          </a>
+          <a href="#tab-ratings" class="tab-link ratings">Ratings</a>
+          <a href="#tab-info" class="tab-link ratings">Info</a>
         </div>
       </div>
       <div class="tabs-animated-wrap">
         <div class="tabs">
-          <div id="tab-booking" class="page-content tab tab-active">
-            <div class="block block-strong">
+          <!--BOOKING-->
+          <div id="tab-booking" class="tab tab-active">
+            <div class="block dish-block">
               <p>
                 By booking a meal in advance, you help us adapt our order volumes to your demand. This not only prevents
                 waste but can also save you a pretty penny!
@@ -49,7 +68,8 @@
             </div>
             <div class="row">
               <div class="col-25"></div>
-              <button class="col-50 button button-fill button-round">BOOK THIS DISH</button>
+              <button class="col-50 button button-fill button-round">BOOK THIS DISH
+              </button>
               <div class="col-25"></div>
             </div>
             <p style="text-align: center;">
@@ -59,27 +79,25 @@
               discount only applies if you book before 29/11/2022
             </p>
           </div>
-          <div id="tab-ratings" class="page-content tab">
-            <div class="block block-strong">
-              <p>Tab 2 content</p>
-              <div class="row">
-                <div class="col-10"></div>
-                <a href="#" class="popup-open col-15" data-popup="#dish-rating-popup">
+          <!--RATINGS-->
+          <div id="tab-ratings" class="tab">
+            <div class="block">
+              <div style="display:flex; justify-content: space-evenly;">
+                <a href="#" class="popup-open" data-popup="#dish-rating-popup">
                   <i class="icon material-icons" style="color:#eeb345;">star_border</i>
                 </a>
-                <a href="#" class="popup-open col-15" data-popup="#dish-rating-popup">
+                <a href="#" class="popup-open" data-popup="#dish-rating-popup">
                   <i class="icon material-icons" style="color:#eeb345;">star_border</i>
                 </a>
-                <a href="#" class="popup-open col-15" data-popup="#dish-rating-popup">
+                <a href="#" class="popup-open" data-popup="#dish-rating-popup">
                   <i class="icon material-icons" style="color:#eeb345;">star_border</i>
                 </a>
-                <a href="#" class="popup-open col-15" data-popup="#dish-rating-popup">
+                <a href="#" class="popup-open" data-popup="#dish-rating-popup">
                   <i class="icon material-icons" style="color:#eeb345;">star_border</i>
                 </a>
-                <a href="#" class="popup-open col-15" data-popup="#dish-rating-popup">
+                <a href="#" class="popup-open" data-popup="#dish-rating-popup">
                   <i class="icon material-icons" style="color:#eeb345;">star_border</i>
                 </a>
-                <div class="col-10"></div>
               </div>
               <div>
                 <div class="chip">
@@ -91,11 +109,15 @@
               </div>
             </div>
           </div>
-          <div id="tab-info" class="page-content tab">
-            <div class="block block-strong">
+          <!--INFO-->
+          <div id="tab-info" class="tab">
+            <div class="block dish-block">
               <p>Pasta: hardweat grain, water.</p>
               <p>
                 Bolognese Sauce: water, 19% beef and pork (50% beef, 50% pork), tomato paste double concentrated, 10.2% tomato pulp, vegetables (carrots, celery), 6% diced tomatoes, seasoning mix (table salt, modified corn starch, spices, sugar, table seasoning, beef extract, table gelatin, dextrose, herbs, spice extracts), table gelatin, canola oil.
+              </p>
+              <p>
+                Alergens: <b>gluten</b>, pork, tomato
               </p>
             </div>
           </div>
