@@ -82,7 +82,7 @@
                 you will receive a discount on the meal at checkout.
               </p>
             </div>
-            <div class="row">
+            <div id="bookingButtonRow" class="row">
               <div class="col-25"></div>
               <button class="col-50 button button-fill button-round" style="padding: 20px">BOOK THIS DISH
               </button>
@@ -212,7 +212,12 @@
   import mockDishes from '../js/dishes.js';
 
 
-  export default function (props, {$f7route }) {
+  export default function (props, {$f7route, $on }) {
+    $on('pageInit', () => {
+      book();
+      // Default
+    });
+
     let dishes = mockDishes();
     let dish;
     console.log($f7route.params)
@@ -225,7 +230,21 @@
     return $render;
   };
 
-  window.logshit = () => {
-    console.log("shit")
+  function book() {
+    const button = document.getElementById('bookingButtonRow');
+    button.innerHTML = `<div class="col-25"></div>
+              <button onclick="toggle(this)" class="col-50 button button-fill button-round" style="padding: 20px">BOOK THIS DISH
+              </button>
+              <div class="col-25"></div>`
   }
+
+  window.toggle = (elem) => {
+    if(elem.innerHTML.includes("!")) {
+      elem.style["background-color"] = "#1464BC";
+      elem.innerHTML = "BOOK THIS DISH";
+    } else {
+      elem.style["background-color"] = "#FAD17C";
+      elem.innerHTML = `<i class="icon material-icons" style="color: white; padding-right: 10px">check</i>` + "DISH BOOKED!";
+    }
+};
 </script>

@@ -154,7 +154,7 @@
     let dishes = mockDishes();
     console.log(dishes);
     dishes.forEach((dish) => {
-      if(!datesAreOnSameDay(dish.date,new Date(Date.now()))) return;
+      //if(!datesAreOnSameDay(dish.date,new Date(Date.now()))) return;
       const currentDishHtmlString = `
       <li>
             <div class="dish-card-div item-link item-content">
@@ -173,7 +173,7 @@
                     <div class="item-subtitle" >${dish.averageRating} (${dish.numRatings})</div>
                   </div>
                   <div style="display: flex; justify-content: space-evenly;">
-                    <i class="icon material-icons ${(dish.date<=new Date(Date.now() + 86400000*7)) ? "deactivated" : "activated"}">local_grocery_store</i>
+                    <i class="icon material-icons ${(dish.date<=new Date(Date.now() + 86400000*7)) ? "deactivated" : "deactivated"}">local_grocery_store</i>
                     <i class="icon material-icons activated" onclick="toggleVisibility(this,${dish.counter})">visibility_off</i>
                   </div>
                 </div>
